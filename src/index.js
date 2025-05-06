@@ -9,6 +9,4 @@ form.addEventListener('submit', (e) => {
     getLocationWeather(location.value);  
 })
 
-
-
-
+getLocationWeather();
