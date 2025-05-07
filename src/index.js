@@ -1,5 +1,6 @@
 import { getLocationWeather } from "./get-weather";
 import "./styles.css";
+import "./reset.css"
 
 const location = document.querySelector('#location');
 const form = document.querySelector('#location-form');
