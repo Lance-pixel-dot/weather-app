@@ -1,5 +1,6 @@
 import { toggleTempFormat, toggleTempButton } from "./toggle-temp";
 import { changeBackgroundColor } from "./change-background";
+import { generateGif } from "./set-gif";
 
 const contentDiv = document.querySelector('#content');
 
@@ -11,7 +12,6 @@ async function getLocationWeather(location) {
         });
         const weather = await response.json();
 
-        console.log(weather);
         contentDiv.textContent = '';
 
         const weatherStatus = document.createElement('div');
@@ -44,6 +44,7 @@ async function getLocationWeather(location) {
 
         changeBackgroundColor(weather.currentConditions.cloudcover);
         
+        generateGif(weather.currentConditions.conditions);
 
     } catch{
         contentDiv.textContent = "Error: couldn't fetch data from the server";

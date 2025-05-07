@@ -8,17 +8,16 @@ async function generateGif(weatherStatus) {
         const gif = await response.json();
 
         const gifContainer = document.createElement('div');
-        gifContainer.className = 'gif-container';
         const gifImg = document.createElement('img');
-        gifImg.src = gif.
+        gifImg.src = gif.data.images.original.url
 
         gifContainer.appendChild(gifImg);
         contentDiv.appendChild(gifContainer);
 
     } catch{
-        const gifContainer = document.querySelector('.gif-container');
+        const gifContainer = document.createElement('div');
         contentDiv.appendChild(gifContainer);
-        gifContainer.textContent = "Couldn't fetch data from the server";
+        gifContainer.textContent = "Couldn't fetch GIF data from the server";
     }
 
 }
