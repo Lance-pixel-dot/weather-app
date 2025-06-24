@@ -13,6 +13,7 @@ async function generateGif(weatherStatus) {
     const gifContainer = document.createElement("div");
     const gifImg = document.createElement("img");
     gifImg.src = gif.data.images.original.url;
+    gifImg.className = 'gif';
 
     gifContainer.appendChild(gifImg);
     contentDiv.appendChild(gifContainer);

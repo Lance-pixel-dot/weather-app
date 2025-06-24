@@ -17,7 +17,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    gap: 50px;
+    gap: 30px;
     width: 40%;
 }
 #content > div{
@@ -32,7 +32,7 @@ body{
     align-self: center;
 }
 img{
-    width: 30%;
+    width: 90px;
     align-self: center;
 }
 input{
@@ -45,4 +45,7 @@ button{
 }
 label{
     font-weight: bold;
+}
+.gif{
+    width: 100px;
 }
