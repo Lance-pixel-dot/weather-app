@@ -26,7 +26,6 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-
 }
 #content button{
     align-self: center;
@@ -47,5 +46,5 @@ label{
     font-weight: bold;
 }
 .gif{
-    width: 100px;
+    width: auto;
 }
