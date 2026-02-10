@@ -17,7 +17,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
     width: 40%;
 }
 #content > div{
@@ -31,7 +31,7 @@ body{
     align-self: center;
 }
 img{
-    width: 90px;
+    height: 100px;
     align-self: center;
 }
 input{
@@ -46,5 +46,22 @@ label{
     font-weight: bold;
 }
 .gif{
-    width: auto;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.container{
+    height: 90%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px black solid;
+    border-radius: 10px;
+}
+#location-form{
+    padding: 10px;
 }
