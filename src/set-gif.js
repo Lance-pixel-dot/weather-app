@@ -3,7 +3,7 @@ const contentDiv = document.querySelector("#content");
 async function generateGif(weatherStatus) {
   try {
     const response = await fetch(
-      `https://api.giphy.com/v1/gifs/translate?api_key=Qgma9fI5zrSKIyRZolZnGzbb2kyQw5Ts&s=${weatherStatus}-weather`,
+      `https://api.giphy.com/v1/gifs/translate?api_key=Qgma9fI5zrSKIyRZolZnGzbb2kyQw5Ts&s=${weatherStatus} weather news`,
       {
         mode: "cors",
       }
