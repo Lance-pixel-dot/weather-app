@@ -2,6 +2,12 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --open --config webpack.dev.js",
+    "//" : "run build first before deploy",
+    "predeploy": "git checkout gh-pages && git merge main --no-edit",
+    "bundle": "npx webpack",
+    "setUpOne": "git add dist -f && git commit -m \"Deployment commit\"",
+    "setUpTwo": "git subtree push --prefix dist origin gh-pages",
+    "setUpThree": "git checkout main", 
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
