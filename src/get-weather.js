@@ -15,8 +15,6 @@ async function getLocationWeather(location) {
     );
     const weather = await response.json();
 
-    console.log(weather);
-
     contentDiv.textContent = "";
 
     const weatherStatus = document.createElement("div");
